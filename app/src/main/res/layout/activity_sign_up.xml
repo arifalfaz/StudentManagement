@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:context=".Sign_Up">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Don’t have ID? Create one now."/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/design2">
+
+        <LinearLayout
+            android:layout_margin="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                app:startIconDrawable="@drawable/person"
+                app:endIconCheckable="true"
+                app:endIconMode="clear_text"
+                app:helperText="Required"
+                app:helperTextTextColor="#E91E63"
+                app:counterEnabled="true"
+                app:counterMaxLength="25"
+                android:hint=" Enter User Name">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email_id"
+                app:startIconDrawable="@drawable/email"
+                app:endIconCheckable="true"
+                app:endIconMode="clear_text"
+                app:helperText="Required"
+                app:helperTextTextColor="#E91E63"
+                android:hint=" Enter Your Email Id">
+
+                <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent"
+                 android:inputType="textEmailAddress"
+                 android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_pass"
+                app:helperText="Required"
+                app:counterEnabled="true"
+                app:counterMaxLength="25"
+                app:startIconDrawable="@drawable/lock"
+                app:endIconMode="password_toggle"
+                app:helperTextTextColor="#E91E63"
+                android:hint=" Enter Your password">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:inputType="textPassword"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+           <CheckBox
+               android:checked="true"
+               android:layout_marginTop="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Use our Terms and Conditions Generator to create your Terms and Conditions agreement."/>
+
+            <Button
+                android:background="@drawable/design1"
+                android:layout_marginTop="20dp"
+                android:elevation="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/continu"
+                android:text="Continue ">
+            </Button>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

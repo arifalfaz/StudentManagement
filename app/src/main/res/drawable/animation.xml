@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:duration="500"
+        android:drawable="@drawable/college"/>
+    <item android:duration="700"
+        android:drawable="@drawable/college2"/>
+    <item android:duration="700"
+        android:drawable="@drawable/college3"/>
+    <item android:duration="700"
+        android:drawable="@drawable/college4"/>
+    <item android:duration="700"
+        android:drawable="@drawable/college5"/>
+
+</animation-list>
